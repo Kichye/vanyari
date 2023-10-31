@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6, [class^='heading-'] {
 	margin-bottom: 0;
 	font-weight: 700;
 	color: #151515;
-	font-family: "Playfair Display", "Times New Roman", Times, serif;
+	font-family: "Playfair Display", "Montserrat", Times, serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class^='heading-'] a {
@@ -5432,6 +5432,14 @@ html [class*='section-'].section-bottom-0 {
 * Light Backgrounds
 */
 .bg-default {
+	background-color: #ffffff;
+}
+
+.bg-image {
+	background-image: url('../images/Background-01.png');
+	background-size: 120%;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-color: #ffffff;
 }
 
@@ -14740,3 +14748,125 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 .dtp .right {
 	right: 20px;
 }
+
+/*
+* Planes
+*/
+  
+  @media (min-width: 900px) {
+	.background {
+	  padding: 0 0 25px;
+	}
+  }
+  
+  
+  .panel {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 25px;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+  }
+  
+  .pricing-table {
+	box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+	display:flex;
+	flex-direction:column;
+  }
+  
+  @media (min-width: 900px) {
+	.pricing-table {
+	  flex-direction: row;
+	}
+  }
+  
+  .pricing-table * {
+	text-align: center;
+	text-transform: uppercase;
+  }
+  
+  .pricing-plan {
+	border-bottom: 1px solid #e1f1ff;
+	padding: 25px;
+  }
+  
+  .pricing-plan:last-child {
+	border-bottom: none;
+  }
+  
+  @media (min-width: 900px) {
+	.pricing-plan {
+	  border-bottom: none;
+	  border-right: 1px solid #e1f1ff;
+	  flex-basis: 100%;
+	  padding: 25px 50px;
+	}
+  
+	.pricing-plan:last-child {
+	  border-right: none;
+	}
+  }
+  
+  .pricing-img {
+	margin-bottom: 25px;
+	max-width: 100%;
+  }
+  
+  .pricing-header {
+	color: #888;
+	font-weight: 600;
+	letter-spacing: 1px;
+  }
+  
+  .pricing-features {
+	color: #016FF9;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 50px 0 25px;
+  }
+  
+  .pricing-features-item {
+	border-top: 1px solid #e1f1ff;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 15px 0;
+  }
+  
+  .pricing-features-item:last-child {
+	border-bottom: 1px solid #e1f1ff;
+  }
+  
+  .pricing-price {
+	color: #016FF9;
+	font-size: 32px;
+	font-weight: 700;
+	align-self: flex-end;
+
+  }
+  
+  .pricing-button {
+	border: 1px solid #9dd1ff;
+	border-radius: 10px;
+	color: #348EFE;
+	display: inline-block;
+	margin: 25px 0;
+	padding: 15px 35px;
+	text-decoration: none;
+	transition: all 150ms ease-in-out;
+  }
+  
+  .pricing-button:hover,
+  .pricing-button:focus {
+	background-color: #e1f1ff;
+  }
+  
+  .pricing-button.is-featured {
+	background-color: #48aaff;
+	color: #fff;
+  }
+  
+  .pricing-button.is-featured:hover,
+  .pricing-button.is-featured:active {
+	background-color: #269aff;
+  }
