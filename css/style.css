@@ -314,11 +314,11 @@ a, a:focus, a:active, a:hover {
 }
 
 a, a:focus, a:active {
-	color: #cef1ea;
+	color: #0072bc;
 }
 
 a:hover {
-	color: #b4e5db;
+	color: #0072bc;
 }
 
 a[href*='tel'], a[href*='mailto'] {
@@ -326,11 +326,11 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .link-hover {
-	color: #b4e5db;
+	color: #0072bc;
 }
 
 .link-press {
-	color: #b4e5db;
+	color: #0072bc;
 }
 
 .privacy-link {
@@ -2350,6 +2350,11 @@ h1 .divider-lg {
 	color: #ffffff;
 	background-color: #0072bc;
 	border-color: #0072bc;
+}
+.button-danger, .button-danger:focus {
+	color: #ffffff;
+	background-color: #bc2f00;
+	border-color: #bc2f00;
 }
 
 .button-primary:hover, .button-primary:active {
